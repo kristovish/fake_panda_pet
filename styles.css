@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+
+body {
+    width: 300px;
+    height: 550px;
+}
+
+
+.site-container {
+    width: 300px;
+    height: 550px;
+    background-color: #00000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 2px 2px 7px rgb(3 11 22), -2px -2px 7px rgb(163, 177, 198),
+        -8px -8px 50px rgb(239 230 230 / 0%), 3px 3px 25px rgba(0, 0, 0, 0.6);
+
+
+}
+
+
+
+
+.bamboo-background {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 276px;
+    height: 526px;
+    border-radius: 12px;
+    background-image: url(bamboo_forest.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+.panda-name {
+    width: 300px;
+    height: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 0.8em;
+    color: #736363;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+
+}
+
+
+    .forest-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        width: 288px;
+        height: 538px;
+        position: absolute;
+        top: 0;
+        z-index: -10;
+    }
+
+
+    .basket-btn {
+        position: absolute;
+        top: 467px;
+        bottom: 10px;
+        left: 160px;
+        transform: translateX(-50%);
+        cursor: pointer;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        color: var(--gray);
+        z-index: 10; 
+    }
+
+    .basket-btn:active {
+        box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9,
+            inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
+    }
+
+    .basket-btn.active+.bamboo-container {
+        display: block;
+    }
+
+    .bamboo-container {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: 70px;
+        position: absolute;
+        top: 390px;
+        background-color: #ffffff;
+        box-shadow: 2px 2px 7px rgb(163, 177, 198), -2px -2px 7px rgb(163, 177, 198),
+            -8px -8px 50px rgba(255, 255, 255, 0.8), 3px 3px 25px rgba(0, 0, 0, 0.6);
+            z-index: 10;
+    }
+
+    .bamboo-container--visible {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: 70px;
+        position: absolute;
+        bottom: 70px;
+        background-color: #ffffff;
+        box-shadow: 2px 2px 7px rgb(163, 177, 198), -2px -2px 7px rgb(163, 177, 198),
+            -8px -8px 50px rgba(255, 255, 255, 0.8), 3px 3px 25px rgba(0, 0, 0, 0.6);
+            z-index: 10;
+    }
+
+
+
+    .active+.bamboo-container {
+        display: block;
+    }
+
+    .bamboo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100px;
+        max-height: 60px;
+        align-items: center;
+        z-index: 10;
+    }
+
+
+
+
+.panda-container {
+    width: 220px;
+    height: 310px;
+    top: 60px;
+    background-size: cover;
+    position: absolute;
+    margin: 0 auto;
+    border-radius: 0%;
+    /*box-shadow: 2px 2px 7px rgb(163 177 198 / 15%), -2px -2px 7px rgb(163, 177, 198),
+        -8px -8px 50px rgb(255 255 255 / 0%), 3px 3px 25px rgba(0, 0, 0, 0.6);
+*/
+}
+
+
+
+.panda {
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    height: 120px;
+    width: 80px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 30%;
+}
+
+.face {
+    position: relative;
+    background-color: white;
+    border: 5px solid black;
+    height: 90px;
+    width: 110px;
+    border-radius: 50%;
+    bottom: 30px;
+    right: 20px;
+}
+
+.ear-left,
+.ear-right {
+    position: relative;
+    background-color: black;
+    height: 25px;
+    width: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+.ear-left {
+    transform: rotate(145deg);
+    bottom: 13px;
+    right: 8.3px;
+}
+
+.ear-right {
+    transform: rotate(-145deg);
+    left: 78px;
+    bottom: 38px;
+}
+
+.eye-left,
+.eye-right {
+    position: relative;
+    background-color: black;
+    width: 28px;
+    height: 33px;
+    border-radius: 50%;
+}
+
+.eye-left {
+    bottom: 30px;
+    left: 10px;
+    transform: rotate(25deg);
+}
+
+.eye-right {
+    bottom: 63px;
+    left: 72px;
+    transform: rotate(-25deg);
+}
+
+.eyeball {
+    position: relative;
+    top: 8px;
+    left: 7px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.nose {
+    position: relative;
+    height: 8px;
+    width: 15px;
+    background-color: black;
+    border-radius: 15px;
+    bottom: 65px;
+    left: 48px;
+}
+
+.hand-left,
+.hand-right {
+    position: relative;
+    width: 25px;
+    height: 43px;
+    background-color: black;
+    border-radius: 30px;
+}
+
+.hand-left {
+    transform: rotate(90deg);
+    bottom: 28px;
+    right: 12px;
+    animation: wave 3s infinite;
+    transform-origin: top;
+}
+
+@keyframes wave {
+    50% {
+        transform: rotate(120deg);
+    }
+}
+
+.hand-right {
+    transform: rotate(-90deg);
+    bottom: 92px;
+    left: 88px;
+}
+
+.leg-left,
+.leg-right {
+    position: relative;
+    background-color: black;
+    width: 17px;
+    height: 25px;
+    border-radius: 0 0 30px 30px;
+}
+
+.leg-left {
+    bottom: 65px;
+    left: 15px;
+}
+
+.leg-right {
+    bottom: 90px;
+    left: 49px;
+}
+
+.shadow {
+    position: relative;
+    background-color: rgba(0, 0, 0, 2);
+    height: 30px;
+    width: 100px;
+    border-radius: 50%;
+    bottom: 105px;
+    right: 10px;
+}
