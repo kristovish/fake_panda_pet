@@ -307,3 +307,15 @@ body {
     bottom: 105px;
     right: 10px;
 }
+
+@media (max-width: 500px) {
+    
+    .body {
+        transform: scale(0.8); /* Reduce el tamaño en un 80% */
+        transform-origin: top left; /* Aplica la transformación desde la esquina superior izquierda */
+    }
+    .site-container {
+        transform: scale(0.8); /* Reduce el tamaño en un 80% */
+        transform-origin: top left; /* Aplica la transformación desde la esquina superior izquierda */
+    }
+}
